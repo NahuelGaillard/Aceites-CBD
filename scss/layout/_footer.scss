@@ -1,0 +1,30 @@
+.containerFooter { 
+    position: relative;
+    padding-bottom: 10em;
+    margin-top: 10em;
+    border: black 2px solid;
+    @include bgGradientRose;
+    img {
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+    }
+    a {
+        color: $colorBlack;
+    }
+    .containerContacto {
+        .footerInfo {
+        line-height: 3em;
+        letter-spacing: 1px;
+        list-style: none;
+        padding-left: 30px;
+        }
+    }
+    .footerIcon {
+        color: $colorBlack;
+    }
+    .footerDireccion {
+        min-height: 50px;
+        margin-bottom: 10px;
+    }
+}
