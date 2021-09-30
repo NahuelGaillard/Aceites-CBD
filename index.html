@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
 <!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- Icons -->
     <link rel="stylesheet" type="text/css" href="font/flaticon.css"> 
-
+<!-- Boostrap -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<!-- Estilos -->
+	<link rel="stylesheet" href="css/estilos.css">
     <title>Aceites CBD</title>
 </head>
 <body>
+<!-- HEADER -->
 	<header >
 		<div class="d-flex flex-column justify-content-between flex-md-row align-items-center">
 			<a href="index.html"><img id="logo" class="d-none d-lg-flex" src="media/logo.jpg" alt="logo" title="asd"></a>
 			<nav class="navbar navbar-expand-lg navbar-light ">
-			
+				<button class="m-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+                </button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="miNavbar navbar-nav type-regular type-sm">
 
@@ -24,15 +31,13 @@
 						<!-- <li class="nav-item text-center"><a class="nav-link" href="index.html"><i class="active flaticon-home" title="Inicio"> Inicio</i></a></li> -->
 
                         <!-- DROPDOWN -->
-                        <!-- <button class="m-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <li class="nav-item dropdown text-center"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-shopping-bag-1" title="Productos"> Productos</i></a>
+                    
+                        <!-- <li class="nav-item dropdown text-center"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-shopping-bag-1" title="Productos"> Productos</i></a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">asd</a>
-								<a class="dropdown-item" href="#">asd</a>
-								<a class="dropdown-item" href="#">asd</a>
-								<a class="dropdown-item" href="#">asd</a>
+								<a class="dropdown-item" href="#"></a>
+								<a class="dropdown-item" href="#"></a>
+								<a class="dropdown-item" href="#"></a>
+								<a class="dropdown-item" href="#"></a>
 							</div>
 						</li> -->
 
@@ -43,6 +48,44 @@
 				</div>
 			</nav>
 		</div>
-	</header>     
+	</header>   
+<!-- SECTION -->
+	<section class="p-1">
+		<div class="containerAcerca m-1 p-1 d-flex flex-wrap">
+            <div class="containerInfo m-auto pl-4 col-11 col-lg-6">
+                <h6 class="text-center type-bold type-lg">Informacion1</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis numquam sint pariatur</p>
+                <ul>
+                    <li>Es un material que <strong> no se oscurece, ni se oxida</strong> con el tiempo.</li>
+                    <li>Es <strong>antialérgico</strong>, en rarisimas ocaciones causa alergías.</li>
+                    <li>Es un material <strong>duro y resistente</strong>, que no se deforma facilmente.</li>
+                    <li>A pesar de su dureza es posible realizar <strong>grabados personalizados</strong>.</li>
+                    <li>A diferencia de otros materiales es <strong>economico</strong>.</li>
+                    <li><strong> Facil de limpiar</strong>, con un simple paño quedara reluciente.</li>
+                </ul>
+            </div>
+			<div class="p-2 m-auto col-11 m-lg-0 col-lg-6">
+                <img width="400px" src="../media/infoMobile1.jpg" srcset="../media/infoMobile1.jpg 768w, ../media/info1.jpg" alt="#" title="#">
+			</div>
+		</div>
+        <div class="containerAcerca m-1 mt-5 p-1 d-flex flex-wrap">
+            <div class="containerInfo m-auto pl-4 col-11 col-lg-6 order-lg-2">
+                <h6 class="text-center type-bold type-lg">Informacion2</h6>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima ad ipsam laudantium quaerat veritatis velit eos? Sint iste sit aliquid eius, dolores odit. Reprehenderit blanditiis voluptatibus fugiat consequatur ipsam?
+				</p>
+            </div>
+			<div class="p-1 m-auto col-11 m-lg-0 col-lg-6">
+                <img width="400px" src="../media/infoMobile2.jpg" srcset="../media/infoMobile2.jpg 768w, ../media/info2.jpg" alt="#" title="#">
+			</div>
+		</div>
+
+	
+	</section>
+
+<!-- ---------script--------- -->
+	<script  src="node_modules/jquery/dist/jquery.js"></script>
+	<script  src="node_modules/popper.js/dist/umd/popper.js"></script>
+	<script  src="node_modules/bootstrap/dist/js/bootstrap.js"></script>  
 </body>
 </html>
