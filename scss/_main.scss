@@ -1,0 +1,15 @@
+@each $type, $val in $weight {
+    .type-#{$type}{
+        font-weight: $val;
+    }
+}
+@each $t, $val in $size {
+    .type-#{$t}{
+        font-size: $val;
+    }
+}
+section {
+    margin: auto;
+    max-width: 1080px;
+    height: auto;
+}

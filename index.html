@@ -26,24 +26,10 @@
                 </button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="miNavbar navbar-nav type-regular type-sm">
-
-                        <!-- Boton Inicio -->
-						<!-- <li class="nav-item text-center"><a class="nav-link" href="index.html"><i class="active flaticon-home" title="Inicio"> Inicio</i></a></li> -->
-
-                        <!-- DROPDOWN -->
-                    
-                        <!-- <li class="nav-item dropdown text-center"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-shopping-bag-1" title="Productos"> Productos</i></a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#"></a>
-								<a class="dropdown-item" href="#"></a>
-								<a class="dropdown-item" href="#"></a>
-								<a class="dropdown-item" href="#"></a>
-							</div>
-						</li> -->
-
                         <li class="nav-item text-center"><a class="nav-link" href="#"><i class="flaticon-letter" title="Productos"> Productos</i></a></li>
                         <li class="nav-item text-center"><a class="nav-link" href="#"><i class="flaticon-letter" title="Sobre el CBD"> Sobre el CBD</i></a></li>
 						<li class="nav-item text-center"><a class="nav-link" href="#"><i class="flaticon-marcador-de-posicion" title="Contacto"> Contacto</i></a></li>
+						<li class="nav-item text-center"><a class="nav-link" href="#" target="_blank" title="..." rel="noreferrer"><i class="flaticon-instagram-2"> Insta</i></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -51,6 +37,46 @@
 	</header>   
 <!-- SECTION -->
 	<section class="p-1">
+
+<!-- Exibidor de Productos -->
+		<div id="containerPromos" class="row justify-content-between"></div>
+
+<!-- CARRUSEL -->
+		<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="media/info1.jpg" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>#asdasd</h5>
+					  <p>#asdasd</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="media/info2.jpg" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>#asdasd</h5>
+					  <p>#asdasd</p>
+					</div>
+				  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" src="media/info1.jpg" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>#asdasd</h5>
+				  <p>#asdasd</p>
+				</div>
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Anterior</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Siguiente</span>
+			</a>
+		  </div> -->
+
+<!-- INFORMACION -->
 		<div class="containerAcerca m-1 p-1 d-flex flex-wrap">
             <div class="containerInfo m-auto pl-4 col-11 col-lg-6">
                 <h6 class="text-center type-bold type-lg">Informacion1</h6>
@@ -79,13 +105,61 @@
                 <img width="400px" src="../media/infoMobile2.jpg" srcset="../media/infoMobile2.jpg 768w, ../media/info2.jpg" alt="#" title="#">
 			</div>
 		</div>
-
-	
+<!-- Contacto -->
+		<div class="containerContactanos m-1 p-3 d-flex flex-wrap text-center">
+			<div class="m-auto p-1 col-11 m-lg-0 col-lg-6 order-1">
+				<form class="col-12 needs-validation" method="POST" action="email.php" novalidate>
+					<div>
+						<div class="form-group text-center">
+							<label for="nombre">Nombre:</label>
+							<input class="form-control border border-dark" type="text" placeholder="Tu nombre" id="nombre" required>
+					
+						</div>
+						<div class="form-group">
+							<label for="correo">Correo:</label>
+							<input class="form-control border border-dark" type="email" placeholder="Tu email" id="correo" required>
+						</div>
+						<div class="form-group ">
+							<label for="textArea">Tu mensaje:</label>
+							<textarea class="form-control border border-dark" id="textArea" rows="3" placeholder="Dejanos tu mensaje." required></textarea>
+							<input type="hidden" name="campoOculto" value="#">
+						</div>
+					</div>
+					<div class="col-12">
+						<button class="btn border border-dark botonModal" type="submit" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+					</div>
+					<div>
+						<button type="button" class="btn border border-dark botonModal" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+					</div>
+				</form>			
+			</div>
+			<div class="containerInfo m-auto col-11 col-lg-6 order-2">
+				<p class="">No te quedes con las dudas, déjanos tu mensaje.</p>
+				<i class="flaticon-letter"> EmailDeContacto@gmail.com</i>
+			</div>
+		</div>
+<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content border border-dark">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body text-center type-md text-success">
+						¡Gracias por tu mensaje!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 <!-- ---------script--------- -->
 	<script  src="node_modules/jquery/dist/jquery.js"></script>
 	<script  src="node_modules/popper.js/dist/umd/popper.js"></script>
 	<script  src="node_modules/bootstrap/dist/js/bootstrap.js"></script>  
+	<script src="index.js"> </script>
 </body>
 </html>
