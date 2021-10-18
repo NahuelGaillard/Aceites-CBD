@@ -1,15 +1,15 @@
 var promoProductos = [
     {img:'media/info2.jpg', nombre:"Producto", valor: 1800, descripcion:"Descripcion"},
-    {img:'media/info2.jpg', nombre:"...", valor: 1200, descripcion:"..."},
-    {img:'media/info2.jpg', nombre:"...", valor: 950, descripcion:"..."},
-    {img:'media/info2.jpg', nombre:"...", valor: 1300, descripcion:"..."},
-    {img:'media/info2.jpg', nombre:"...", valor: 950, descripcion:"..."},
+    {img:'media/info2.jpg', nombre:"Producto", valor: 1200, descripcion:"Descripcion"},
+    {img:'media/info2.jpg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
+    {img:'media/info2.jpg', nombre:"Producto", valor: 1300, descripcion:"Descripcion"},
+    {img:'media/info2.jpg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
 
 ]
 
 
 //  Card de Productos
-const promos = document.getElementById(`containerPromos`)
+const promos = document.getElementById(`exibidorProductos`)
 
 promoProductos.forEach((promo) => {
     const div = document.createElement('div')

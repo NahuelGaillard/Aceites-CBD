@@ -8,8 +8,38 @@
         font-size: $val;
     }
 }
+
+@each $color, $val in $color {
+    .color-#{$color}{
+        color: $val;
+    }
+    
+}
 section {
     margin: auto;
     max-width: 1080px;
     height: auto;
+    margin-top: 120px;
+
+}
+
+a {
+    color: $colorBlack;
+    text-decoration: none;
+    &:active {
+        color: $colorBlack;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $colorBlack;
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.miBoton {
+    padding: 0.5rem 2rem;
+    background-color: $colorGreen;
 }

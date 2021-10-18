@@ -5,7 +5,17 @@ $size:("s":12px,"sm":16px,"md":24px,"lg":36px,"xlg":48px);
 // fontSizeEnd
 
 // Colors
-$colorBlack: #121212;
-$colorWhite: #fff;
+$color:("black":#0D270B,"white": #f4f4f4,"grey":#ffffff68,"green": #759A4A,"LightGreen":#a8df77,"bgGreen":#ECEDE6);
+$colorBlack: #0D270B;
+$colorWhite: #f4f4f4;
 $colorGrey: #ffffff68;
+$colorGreen: #759A4A;
+$colorLightGreen: #a8df77;
+$colorBgGreen: #ECEDE6;
 // ColorsEnd
+
+// Background
+.Bg-ColorBgGreen{
+    background-color: $colorBgGreen;
+}
+//  BackgroundEnd
