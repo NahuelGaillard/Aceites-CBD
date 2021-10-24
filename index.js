@@ -1,9 +1,9 @@
 var promoProductos = [
-    {img:'media/info2.jpg', nombre:"Producto", valor: 1800, descripcion:"Descripcion"},
-    {img:'media/info2.jpg', nombre:"Producto", valor: 1200, descripcion:"Descripcion"},
-    {img:'media/info2.jpg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
-    {img:'media/info2.jpg', nombre:"Producto", valor: 1300, descripcion:"Descripcion"},
-    {img:'media/info2.jpg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
+    {img:'media/productos/promo1.jpeg', nombre:"Producto", valor: 1800, descripcion:"Descripcion"},
+    {img:'media/productos/promo2.jpeg', nombre:"Producto", valor: 1200, descripcion:"Descripcion"},
+    {img:'media/productos/promo3.jpeg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
+    {img:'media/productos/promo4.jpeg', nombre:"Producto", valor: 1300, descripcion:"Descripcion"},
+    {img:'media/productos/promo5.jpeg', nombre:"Producto", valor: 950, descripcion:"Descripcion"},
 
 ]
 
