@@ -31,8 +31,8 @@ Productos.forEach((prod) => {
     div.className = "promos, m-1"
     
     div.innerHTML = `
-                    <div class="card" style="width: 18rem;">
-                        <img src="${prod.img}" class="card-img-top" alt="${prod.nombre}">
+                <div class="card" style="width: 18rem;">        
+                    <img src="${prod.img}" class="card-img-top" alt="${prod.nombre}">
                     <div class="card-body">
                         <h5 class="card-title type-bold">${prod.nombre}</h5>
                         <hr>

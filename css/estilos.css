@@ -49,6 +49,12 @@ section {
   max-width: 1080px;
   height: auto;
   margin-top: 120px; }
+  section img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover; }
+  section .card {
+    width: 13rem; }
 
 a {
   color: #0D270B;
