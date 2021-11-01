@@ -19,7 +19,7 @@ promoProductos.forEach((promo) => {
     <div class="card">
         <h5 class="card-title type-bold">${promo.nombre}</h5>
         <img src="${promo.img}" class="card-img-top" alt="${promo.nombre}">
-        <div class="card-body">
+        <div class="card-body color-black ">
             <p class="card-text text-center type-bold">Precio: $${promo.valor}</p>
             <p class="card-text">${promo.descripcion}</p>
         </div>

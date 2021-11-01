@@ -4,22 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Animate -->
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+<!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Icons -->
-        <link rel="stylesheet" type="text/css" href="font/flaticon.css"> 
-    <!-- Boostrap -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <!-- Estilos -->
-        <link rel="stylesheet" href="css/estilos.css">
+<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!-- Boostrap -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<!-- Estilos -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<!--OPEN GRAPH-->
+    <meta property="og:tittle" content="Aceites Medicinales Royal CBD - Revendedores oficiales">
+    <meta property="og:image" content="https://i.ibb.co/sCqzcqC/logo-aceites.png">
+    <meta property="og:image:height" content="200px">
+    <meta property="og:image:widht" content="200px">
+    <meta property="og:description" content="Aceites Royal CBD - Revendedores oficiales en Capital Federal">
+
     <title>Productos Royal</title>
 </head>
 <body>
+<!-- HEADER -->
+	<header>
+		<div id="menu" class="d-flex flex-column justify-content-around flex-md-row align-items-center">
+			<a href="index.html"><img class="logo" src="media/logo.jpg" alt="AceitesCBD" title="AceitesCBD"></a>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<button class="m-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+                </button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="miNavbar navbar-nav type-bold type-sm text-uppercase">
+                        <li class="nav-item text-center pl-lg-5"><a class="nav-link" href="index.html">Inicio</a></li>
+						<li class="nav-item text-center pl-lg-5"><a class="nav-link" href="#contacto">Contacto</a></li>
+						<li class="nav-item text-center pl-lg-5"><a class="nav-link" href="https://www.instagram.com/aceitesroyal.cbd/?hl=es-la" target="_blank" title="Aceites CBD" rel="noreferrer"><i class="fab fa-instagram type-md"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>  
+
+<!-- SECTION -->
 	<section class="p-1">
         <div class="containerPromos mb-5 text-center">
 			<div id="exibidorProductos" class="row justify-content-around mb-3"></div>
 		</div>
-    </section>
+
+		<!-- Contacto -->
+		<div id="contacto" class="d-flex mb-5 pt-1 pb-1 justify-content-center flex-wrap text-center Bg-ColorBgGreen W-100">
+			<div class="m-auto p-1 col-12 m-lg-0 col-lg-6">
+				<h3>DEJANOS TU MENSAJE</h3>
+				<div class="col-12">
+					<div>
+						<div class="form-group text-center">
+							<label for="nombre">Nombre:</label>
+							<input class="form-control border border-dark" type="text" placeholder="Tu nombre" id="formName" required>
+						</div>
+						<div class="form-group">
+							<label for="correo">Correo:</label>
+							<input class="form-control border border-dark" type="email" placeholder="Tu email" id="formEmail" required>
+						</div>
+						<div class="form-group ">
+							<label for="textArea">Tu mensaje:</label>
+							<textarea class="form-control border border-dark" id="message" rows="3" placeholder="Dejanos tu mensaje." required></textarea>
+						</div>
+					</div>
+					<div class="col-12">
+						<button onclick="sendMail()" type="submit" class="btn border border-dark miBoton" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+					</div>
+				</div>			
+			</div>
+		</div>
+<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Mensaje Enviado</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						¡Gracias por escribirnos! Le responderemos a la brevedad.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn border border-dark miBoton" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+<!-- Footer -->
+	<footer>
+		<div class="w-100 footer-container d-flex justify-content-around align-items-center p-4 Bg-ColorBgGreen">
+			<a href="index.html"><img class="logo-footer" src="media/logo.jpg" alt="AceitesCBD" title="AceitesCBD"></a>
+			<a class="nav-link" href="https://www.instagram.com/aceitesroyal.cbd/?hl=es-la" target="_blank" title="Aceites CBD" rel="noreferrer"><i class="fab fa-instagram type-bold"></i><strong> @aceitesroyal.cbd</strong></a>
+		</div>
+	</footer>
+
+	
 
 	<script  src="node_modules/jquery/dist/jquery.js"></script>
 	<script  src="node_modules/popper.js/dist/umd/popper.js"></script>

@@ -20,14 +20,15 @@ section {
     max-width: 1080px;
     height: auto;
     margin-top: 120px;
-    img {
-        height: 300px;
-        width: 200px;
-        object-fit: cover;
-    }
-    .card {
-        width: 13rem
-
+    .containerPromos{
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .card {
+            width: 13rem        
+        }
     }
 }
 
@@ -50,5 +51,9 @@ a {
 .miBoton {
     padding: 0.5rem 2rem;
     background-color: $colorGreen;
+    color: $colorWhite;
+    font-size: 1.2em;
+    border-radius: 5px;
+  
 }
 
