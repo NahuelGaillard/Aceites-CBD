@@ -49,10 +49,6 @@ section {
   max-width: 1080px;
   height: auto;
   margin-top: 120px; }
-  section .containerPromos img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover; }
   section .containerPromos .card {
     width: 13rem; }
 
@@ -106,6 +102,13 @@ header .nav-item {
 
 .card-body {
   background-color: #759A4A34; }
+
+section .containerPromos img {
+  object-fit: cover; }
+
+section img {
+  height: 384px;
+  width: 288px; }
 
 .cbd-container {
   width: 100%;
