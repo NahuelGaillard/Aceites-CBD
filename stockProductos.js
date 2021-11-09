@@ -31,10 +31,10 @@ Productos.forEach((prod) => {
     div.className = "promos, m-1"
     
     div.innerHTML = `
-                    <div class="row">        
+                    <div class="row mb-5">        
                         <img src="${prod.img}" class="card-img-top col-12 col-md-3" alt="${prod.nombre}">
                         <div class="card-body col-12 col-md-8" >
-                            <h5 class="card-title type-bold">${prod.nombre}</h5>
+                            <h5 class="card-title type-md type-bold">${prod.nombre}</h5>
                             <hr>   
                             <p class="card-text">${prod.descripcion}</p>
                         </div>
