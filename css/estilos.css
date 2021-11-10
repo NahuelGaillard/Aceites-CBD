@@ -118,10 +118,9 @@ section img {
   border-left: 1px solid rgba(0, 0, 0, 0.125);
   padding: 3rem 0; }
   .cbd-container img {
-    width: 200px;
-    height: auto;
+    width: 100%;
     border-radius: 50%;
-    text-align: end; }
+    object-fit: cover; }
   .cbd-container h6 {
     font-size: 1.2rem;
     font-weight: 600;
