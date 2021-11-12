@@ -48,7 +48,7 @@ section {
   margin: auto;
   max-width: 1080px;
   height: auto;
-  margin-top: 120px; }
+  margin-top: 170px; }
   section .containerPromos .card {
     width: 13rem; }
 
@@ -100,6 +100,25 @@ header .logo {
 header .nav-item {
   font-size: 1.2em; }
 
+.aside {
+  position: fixed;
+  bottom: 10%;
+  right: 6px;
+  z-index: 10; }
+  .aside li {
+    list-style: none; }
+    .aside li:hover {
+      transition: 100ms linear;
+      transform: scale(1.1); }
+    .aside li .asideIcon {
+      color: #759A4A; }
+      .aside li .asideIcon:hover {
+        color: #0D270B; }
+
+@media all and (min-width: 992px) {
+  .asideIcon {
+    font-size: 1.2em; } }
+
 .card-body {
   background-color: #759A4A34; }
 
@@ -119,6 +138,7 @@ section img {
   padding: 3rem 0; }
   .cbd-container img {
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover; }
   .cbd-container h6 {
