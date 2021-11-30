@@ -2,10 +2,11 @@
     background-color: $colorGreen2;
 }
 section{
-    img {
+    .productos{
+        img {
         height: 384px;
         width: 288px;
         object-fit: cover;
-
+        }
     }
 }

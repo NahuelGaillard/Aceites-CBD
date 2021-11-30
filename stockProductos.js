@@ -27,7 +27,7 @@ const cardProductos = document.getElementById(`exibidorProductos`)
 
 Productos.forEach((prod) => {
     const div = document.createElement('div')
-    div.className = "promos, m-1"
+    div.className = "productos, m-1"
     
     div.innerHTML = `
                     <div class="row mb-5">        
