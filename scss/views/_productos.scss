@@ -2,14 +2,10 @@
     background-color: $colorGreen2;
 }
 section{
-
-    .containerPromos{
-        img {
-            object-fit: cover;
-        }
-    }
     img {
         height: 384px;
         width: 288px;
+        object-fit: cover;
+
     }
 }
