@@ -120,11 +120,6 @@ header .nav-item {
 .card-body {
   background-color: #759A4A34; }
 
-.productos img {
-  height: 384px;
-  width: 288px;
-  object-fit: cover; }
-
 .cbd-container {
   width: 100%;
   height: 100%;
