@@ -1,12 +1,11 @@
 .card-body {
     background-color: $colorGreen2;
 }
-section{
-    .productos{
-        img {
-        height: 384px;
-        width: 288px;
-        object-fit: cover;
-        }
+
+.productos{
+    img {
+    height: 384px;
+    width: 288px;
+    object-fit: cover;
     }
 }
